@@ -667,6 +667,31 @@ video {
   }
 }
 
+.bg-aboutUs {
+  --tw-bg-opacity: 1;
+  background: linear-gradient(45deg, #003262 40%, #BC9B6A, #FDB515);
+}
+
+.bg-genralObjectives {
+  --tw-bg-opacity: 1;
+  background: linear-gradient(320deg, #FDB515, #BC9B6A, #003262 54%);
+}
+
+.bg-faq {
+  --tw-bg-opacity: 1;
+  background: linear-gradient(180deg, #003262 30%, #BC9B6A, #FDB515);
+}
+
+.bg-schedule {
+  --tw-bg-opacity: 1;
+  background: linear-gradient(75deg, #003262 48%, #BC9B6A, #FDB515);
+}
+
+.bg-gallery {
+  --tw-bg-opacity: 1;
+  background: linear-gradient(320deg, #FDB515, #BC9B6A, #003262 71%);
+}
+
 .bg-berkeley {
   --tw-bg-opacity: 1;
   background-color: rgba(0, 50, 98, var(--tw-bg-opacity));
@@ -1065,6 +1090,10 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.pt-24 {
+  padding-top: 6rem;
+}
+
 .pt-48 {
   padding-top: 12rem;
 }
@@ -1249,6 +1278,11 @@ p {
   margin-right: auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.container-deck {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn {
