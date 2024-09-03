@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
   <!-- Header Area wrapper Starts -->
   <header id="header-wrap" class="relative">
     <!-- Navbar Start -->
@@ -43,7 +42,7 @@
           <div
             class="collapse navbar-collapse hidden lg:block duration-300 shadow absolute top-100 left-0 mt-full bg-white z-20 px-5 py-1 w-full lg:static lg:bg-transparent lg:shadow-none"
             id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto justify-center items-center lg:flex">
+            <ul class="navbar-nav mr-auto justify-start items-center lg:flex">
               <li class="nav-item">
                 <a class="page-scroll active" href="#hero-area">Home</a>
               </li>
@@ -59,17 +58,26 @@
               <li class="nav-item">
                 <a class="page-scroll" href="#partners">Partners</a>
               </li>
+              <!-- Insert buttons as list items for small screens -->
+              <li class="nav-item block lg:hidden">
+                <a class="link-scroll" href="https://forms.gle/i67AnAzaYkjnf8iF8">Register as Participants</a>
+              </li>
+              <li class="nav-item block lg:hidden">
+                <a class="link-scroll" href="deck.html">Register as Sponsors</a>
+              </li>
             </ul>
           </div>
-          <div class="sm:block sm:absolute sm:right-0 sm:mr-16 lg:static lg:mr-0">
-            <div class="flex flex-col">
-              <div class="w-1/2">
-                <a class="bg-berkeley text-calgold border px-10 py-3 duration-300 hover:bg-calgold hover:text-white"
-                  href="#faq">Register</a>
+
+          <!-- Hide these buttons on small screens -->
+          <div class="hidden lg:flex flex-wrap text-center lg:static lg:mr-0">
+            <div class="flex flex-col sm:flex-row sm:justify-end">
+              <div class="w-full sm:w-auto sm:flex-1 lg:w-auto">
+                <a class="block bg-berkeley text-calgold px-3 py-2 duration-300 hover:bg-calgold hover:text-white text-sm sm:text-base w-48 sm:w-64"
+                  href="https://forms.gle/i67AnAzaYkjnf8iF8">Register as Participants</a>
               </div>
-              <div class="w-1/2">
-                <a class="bg-calgold text-berkeley border px-10 py-3 duration-300 hover:bg-calgold hover:text-white"
-                  href="#faq">Other</a>
+              <div class="w-full sm:w-auto sm:ml-4 sm:flex-1 lg:w-auto">
+                <a class="block bg-calgold text-berkeley px-3 py-2 duration-300 hover:bg-calgold hover:text-white text-sm sm:text-base w-48 sm:w-64"
+                  href="deck.html">Register as Sponsors</a>
               </div>
             </div>
           </div>
@@ -82,11 +90,11 @@
   <!-- Header Area wrapper End -->
 
   <!-- Hero Area Start -->
-  <section id="hero-area" class="bg-berkeley pt-10">
-    <div class="flex flex-wrap justify-between">
-      <div class="w-full text-center">
-        <div class="flex text-center wow fadeInUp justify-center" data-wow-delay="1.2s">
-          <img class="w-full" src="./assets/img/PBIS 2024 DECK (SVG)/1.svg" alt="" />
+  <section id="hero-area" class="bg-berkeley pt-22">
+    <div class="flex flex-wrap justify-center items-center">
+      <div class="w-full flex justify-center">
+        <div class="text-center wow fadeInUp" data-wow-delay="1.2s">
+          <img class="mx-auto" src="./assets/img/PBIS 2024 DECK (SVG)/1.svg" alt="" />
         </div>
       </div>
     </div>
@@ -98,7 +106,7 @@
     <div class="container">
       <div class="flex flex-wrap">
         <!-- About Us Text Column -->
-        <div class="w-full lg:w-1/2 px-4 mb-6 lg:mb-0 flex items-center justify-center lg:justify-start">
+        <div class="w-full lg:w-1/2 px-3 mb-6 lg:mb-0 flex items-center justify-center lg:justify-start">
           <div>
             <h2 class="mb-3 section-heading wow fadeInDown" data-wow-delay="0.3s">About Us</h2>
             <div class="features-content wow fadeInLeft" data-wow-delay="0.4s">
@@ -109,22 +117,21 @@
                 be one of the biggest ICT events in Pampanga, with over fifty (50) participating exhibitors and
                 partners.
               </p>
-
             </div>
           </div>
         </div>
         <!-- SVG/Image Column -->
-        <div class="w-full lg:w-1/2 px-4 flex items-center justify-center">
+        <div class="w-full lg:w-1/2 px-3 flex items-center justify-center">
           <div class="flex flex-wrap justify-center">
+            <div class="w-1/3 text-center mx-6 my-6 wow fadeInDown" data-wow-delay="1.0s">
+              <img class="client-logo" src="assets/img/PBIS ICON HEADER/PANCHAM.svg" style="height: 125px;"
+                alt="PANCHAM" />
+            </div>
             <div class="w-1/3 text-center mx-6 my-6 wow fadeInDown" data-wow-delay="0.8s">
               <img class="client-logo" src="assets/img/PBIS ICON HEADER/CICTO.svg" style="height: 125px;" alt="CICTO" />
             </div>
             <div class="w-1/3 text-center mx-6 my-6 wow fadeInDown" data-wow-delay="0.9s">
               <img class="client-logo" src="assets/img/PBIS ICON HEADER/CSFP.svg" style="height: 125px;" alt="CSFP" />
-            </div>
-            <div class="w-1/3 text-center mx-6 my-6 wow fadeInDown" data-wow-delay="1.0s">
-              <img class="client-logo" src="assets/img/PBIS ICON HEADER/PANCHAM.svg" style="height: 125px;"
-                alt="PANCHAM" />
             </div>
           </div>
         </div>
@@ -138,11 +145,11 @@
     <div class="container">
       <div class="flex flex-wrap">
         <!-- PIC -->
-        <div class="w-full lg:w-1/2 px-4 mb-6 lg:mb-0 flex items-center justify-center lg:justify-start">
+        <div class="w-full lg:w-1/2 px-3 mb-6 lg:mb-0 flex items-center justify-center lg:justify-start">
           <img src="./assets/img/pngwing.com.png" alt="" style="height: 360px;">
         </div>
         <!-- LIST -->
-        <div class="w-full lg:w-1/2 px-4 flex justify-center">
+        <div class="w-full lg:w-1/2 px-3 flex justify-center">
           <div>
             <h2 class="mb-3 section-heading wow fadeInDown text-white" data-wow-delay="0.3s">General Objectives</h2>
             <ul class="text-white lg:text-4xl sm:text-sm objectives-list pl-5 tracking-wide">
@@ -165,7 +172,7 @@
       <div class="flex flex-wrap">
         <div class="w-full lg:w-full">
           <div class="text-center mb-12">
-            <h1 class="wow fadeInDown section-heading text-berkeley" data-wow-delay="0.3s">Schedule & Programs</h1>
+            <h1 class="wow fadeInDown section-heading text-berkeley" data-wow-delay="0.3s">Event Details</h1>
           </div>
           <div class="flex flex-wrap justify-center py-6 bg-berkeley text-white rounded">
             <div class="md:w-1/3 text-center justify-center mx-6 my-6 md:mb-3 wow fadeInDown" data-wow-delay="0.4s">
@@ -200,10 +207,11 @@
 
       <div class="mb-12">
         <p class="text-black text-center wow fadeInUp" data-wow-delay="0.6s">
-          Join us for a diverse lineup of events that delve into the intersections of technology, media, and gaming.
-          From the dynamic ICT Expo and E-Sports Competition to insightful Tech Talks and exhilarating tournaments,
-          discover how digital innovations and media are shaping the future of entertainment and professional
-          landscapes.
+          Join us for the Pampanga Business + Innovation Summit 2024, a premier event that brings together visionaries,
+          entrepreneurs, and industry leaders to explore the cutting-edge intersections of business, technology, and
+          innovation. From insightful keynote sessions and interactive workshops to networking opportunities and
+          groundbreaking showcases, discover how transformative ideas and innovative strategies are driving the future
+          of business and economic growth in Pampanga and beyond.
         </p>
       </div>
 
@@ -220,7 +228,7 @@
         </div>
       </div>
 
-      <div id="day-one" class="w-full rounded p-2 text-left wow fadeInLeft" data-wow-delay="1.5s">
+      <div id="day-one-event" class="w-full rounded p-2 text-left wow fadeInLeft" data-wow-delay="0.3s">
         <div class="bg-berkeley text-white border border-gray-700 p-4 my-6 shadow-md rounded client-logo">
           Tech Talks ( I )
         </div>
@@ -230,8 +238,189 @@
         <div class="bg-berkeley text-white border border-gray-700 p-4 my-6 shadow-md rounded client-logo">
           Networking Opportunities
         </div>
+
+        <div class="w-full mx-auto bg-white p-4 rounded-lg shadow-md">
+          <h2 class="text-2xl font-bold mb-4 text-center">Pampanga Business + Innovation Summit Day 1</h2>
+          <table class="w-full bg-white p-4 text-xs">
+            <thead>
+              <tr>
+                <th class="py-3 px-3 border-b">Time</th>
+                <th class="py-3 px-3 border-b">Activity</th>
+                <th class="py-3 px-3 border-b">Speaker/Facilitator</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-3 px-3 border-b">8:00 AM - 10:00 AM</td>
+                <td class="py-3 px-3 border-b">Opening of Booths and Arrival / Registration of Guests</td>
+                <td class="py-3 px-3 border-b">Secretariat</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">10:00 AM - 10:20 AM</td>
+                <td class="py-3 px-3 border-b">Opening Prayer & National Anthem</td>
+                <td class="py-3 px-3 border-b">AVP</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">10:20 AM - 10:30 AM</td>
+                <td class="py-3 px-3 border-b">Welcoming Message and Acknowledgement of Guests</td>
+                <td class="py-3 px-3 border-b">PAMCHAM President</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">10:30 AM - 10:40 AM</td>
+                <td class="py-3 px-3 border-b">Message</td>
+                <td class="py-3 px-3 border-b">City Mayor</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">10:40 AM - 10:50 AM</td>
+                <td class="py-3 px-3 border-b">Message</td>
+                <td class="py-3 px-3 border-b">City Vice-Mayor</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">10:50 AM - 11:00 AM</td>
+                <td class="py-3 px-3 border-b">Launching of One Pampanga App</td>
+                <td class="py-3 px-3 border-b">Macky Nicdao</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">11:00 AM - 11:30 AM</td>
+                <td class="py-3 px-3 border-b">Presentation 1</td>
+                <td class="py-3 px-3 border-b">Digital Ocean</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">11:30 AM - 1:00 PM</td>
+                <td class="py-3 px-3 border-b">Lunch & Networking</td>
+                <td class="py-3 px-3 border-b">--</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">1:00 PM - 1:30 PM</td>
+                <td class="py-3 px-3 border-b">Digitization of SMEs</td>
+                <td class="py-3 px-3 border-b">Carlo Calimon (SMEs)</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">1:30 PM - 2:00 PM</td>
+                <td class="py-3 px-3 border-b">Presentation 3</td>
+                <td class="py-3 px-3 border-b">Sponsor/Partner</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">2:00 PM - 2:30 PM</td>
+                <td class="py-3 px-3 border-b">Increase Profits With Data Science and Artificial Intelligence</td>
+                <td class="py-3 px-3 border-b">Joey Gurango</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">2:30 PM - 3:00 PM</td>
+                <td class="py-3 px-3 border-b">Presentation 5</td>
+                <td class="py-3 px-3 border-b">Sponsor/Partner</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">3:00 PM - 3:30 PM</td>
+                <td class="py-3 px-3 border-b">Coffee Break & Raffle</td>
+                <td class="py-3 px-3 border-b">--</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">3:30 PM - 4:00 PM</td>
+                <td class="py-3 px-3 border-b">Innovations and Available Business Solutions</td>
+                <td class="py-3 px-3 border-b">Jonathan De Luzuriaga</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">4:00 PM - 4:30 PM</td>
+                <td class="py-3 px-3 border-b">Presentation 7</td>
+                <td class="py-3 px-3 border-b">Sponsor/Partner</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">4:30 PM - 4:40 PM</td>
+                <td class="py-3 px-3 border-b">Transition & Raffle</td>
+                <td class="py-3 px-3 border-b">--</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">4:40 PM - 5:00 PM</td>
+                <td class="py-3 px-3 border-b">Panel Discussion</td>
+                <td class="py-3 px-3 border-b">--</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">5:00 PM - 5:10 PM</td>
+                <td class="py-3 px-3 border-b">Closing Remarks & Major Raffle</td>
+                <td class="py-3 px-3 border-b">--</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
+      <div id="day-two-event" class="w-full rounded p-2 text-left wow fadeInLeft hidden" data-wow-delay="0.3s">
+        <div class="bg-berkeley text-white border border-gray-700 p-4 my-6 shadow-md rounded client-logo">
+          Tech Talks ( II )
+        </div>
+        <div class="bg-berkeley text-white border border-gray-700 p-4 my-6 shadow-md rounded client-logo">
+          PAMCHAM General Membership Meeting
+        </div>
+        <div class="bg-berkeley text-white border border-gray-700 p-4 my-6 shadow-md rounded client-logo">
+          Networking Opportunities
+        </div>
+
+        <div class="w-full mx-auto bg-white p-4 rounded-lg shadow">
+          <h2 class="text-2xl font-bold mb-4 text-center">Pampanga Business + Innovation Summit Day 2</h2>
+          <table class="w-full bg-white text-xs">
+            <thead>
+              <tr>
+                <th class="py-3 px-3 border-b">Time</th>
+                <th class="py-3 px-3 border-b">Activity</th>
+                <th class="py-3 px-3 border-b">Speaker/Facilitator</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="py-3 px-3 border-b">8:00 AM - 9:00 AM</td>
+                <td class="py-3 px-3 border-b">Opening of Booths and Arrival / Registration of Guests</td>
+                <td class="py-3 px-3 border-b">PAMCHAM</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">9:00 AM - 9:10 AM</td>
+                <td class="py-3 px-3 border-b">Opening Message</td>
+                <td class="py-3 px-3 border-b">PAMCHAM</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">9:10 AM - 9:40 AM</td>
+                <td class="py-3 px-3 border-b">Presentation 1</td>
+                <td class="py-3 px-3 border-b">--</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">9:40 AM - 10:10 AM</td>
+                <td class="py-3 px-3 border-b">Creating a Safe Digital Space</td>
+                <td class="py-3 px-3 border-b">DICT-CSB</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">10:10 AM - 10:40 AM</td>
+                <td class="py-3 px-3 border-b">Presentation 3</td>
+                <td class="py-3 px-3 border-b">--</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">10:40 AM - 11:10 AM</td>
+                <td class="py-3 px-3 border-b">Presentation 4</td>
+                <td class="py-3 px-3 border-b">--</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">11:10 AM - 11:20 AM</td>
+                <td class="py-3 px-3 border-b">Transition & Raffle</td>
+                <td class="py-3 px-3 border-b">--</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">11:20 AM - 11:50 AM</td>
+                <td class="py-3 px-3 border-b">Panel Discussion</td>
+                <td class="py-3 px-3 border-b">--</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">11:50 AM - 12:00 PM</td>
+                <td class="py-3 px-3 border-b">Closing Remarks & Major Raffle</td>
+                <td class="py-3 px-3 border-b">--</td>
+              </tr>
+              <tr>
+                <td class="py-3 px-3 border-b">2:00 PM - 5:00 PM</td>
+                <td class="py-3 px-3 border-b">PAMCHAM GMM</td>
+                <td class="py-3 px-3 border-b">Sec. Ivan Uy</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
   <!-- Schedule Section End-->
@@ -296,111 +485,6 @@
   </section>
   <!-- Gallery Section End -->
 
-  <!-- Team Section Start -->
-  <!-- <section id="team" class="py-24 text-center">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">Our Team</h2>
-      </div>
-      <div class="flex flex-wrap justify-center">
-
-        <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">
-          <div class="team-item">
-            <div class="team-img relative">
-              <img class="img-fluid" src="assets/img/team/img1.jpg" alt="">
-              <div class="team-overlay">
-                <ul class="flex justify-center">
-                  <li class="mx-1">
-                    <a href="#" class="social-link hover:bg-indigo-500">
-                      <i class="lni lni-facebook-original" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li class="mx-1">
-                    <a href="#" class="social-link hover:bg-blue-400">
-                      <i class="lni lni-twitter-original" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li class="mx-1">
-                    <a href="#" class="social-link hover:bg-red-500">
-                      <i class="lni lni-instagram-original" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="text-center px-5 py-3">
-              <h3 class="team-name">John Doe</h3>
-              <p>UX UI Designer</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">
-          <div class="team-item">
-            <div class="team-img relative">
-              <img class="img-fluid" src="assets/img/team/img2.jpg" alt="">
-              <div class="team-overlay">
-                <ul class="flex justify-center">
-                  <li class="mx-1">
-                    <a href="#" class="social-link hover:bg-indigo-500">
-                      <i class="lni lni-facebook-original" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li class="mx-1">
-                    <a href="#" class="social-link hover:bg-blue-400">
-                      <i class="lni lni-twitter-original" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li class="mx-1">
-                    <a href="#" class="social-link hover:bg-red-500">
-                      <i class="lni lni-instagram-original" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="text-center px-5 py-3">
-              <h3 class="team-name">Sarah Doe</h3>
-              <p>Front-End Developer</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">
-          <div class="team-item">
-            <div class="team-img relative">
-              <img class="img-fluid" src="assets/img/team/img3.jpg" alt="">
-              <div class="team-overlay">
-                <ul class="flex justify-center">
-                  <li class="mx-1">
-                    <a href="#" class="social-link hover:bg-indigo-500">
-                      <i class="lni lni-facebook-original" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li class="mx-1">
-                    <a href="#" class="social-link hover:bg-blue-400">
-                      <i class="lni lni-twitter-original" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                  <li class="mx-1">
-                    <a href="#" class="social-link hover:bg-red-500">
-                      <i class="lni lni-instagram-original" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="text-center px-5 py-3">
-              <h3 class="team-name">Rob Hope</h3>
-              <p>Front-end Developer</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- Team Section End -->
-
   <!-- Partners Section Start -->
   <div id="partners" class="py-16 bg-black">
     <div class="container">
@@ -449,104 +533,6 @@
   </div>
   <!-- Partners Section End -->
 
-  <!-- Testimonial Section Start -->
-  <!-- <section id="testimonial" class="py-24 bg-gray-800">
-    <div class="container">
-      <div class="flex justify-center mx-3">
-        <div class="w-full lg:w-7/12">
-          <div id="testimonials" class="testimonials">
-            <div class="item focus:outline-none">
-              <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
-                <div class="text-center">
-                  <p class="text-gray-600 leading-loose">Holisticly empower leveraged ROI whereas effective
-                    web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly
-                    initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged
-                    ROI whereas effective web-readiness. </p>
-                </div>
-                <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
-                  <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img1.jpg" alt="">
-                </div>
-                <div class="mb-2">
-                  <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">Fajar</h2>
-                  <h3 class="font-medium text-white text-sm">Euphoriya</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="item focus:outline-none">
-              <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
-                <div class="text-center">
-                  <p class="text-gray-600 leading-loose">Holisticly empower leveraged ROI whereas effective
-                    web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly
-                    initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged
-                    ROI whereas effective web-readiness. </p>
-                </div>
-                <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
-                  <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img2.jpg" alt="">
-                </div>
-                <div class="mb-2">
-                  <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">Mila</h2>
-                  <h3 class="font-medium text-white text-sm">PageBulb</h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="item focus:outline-none">
-              <div class="text-center py-10 px-8 md:px-10 rounded border border-gray-900">
-                <div class="text-center">
-                  <p class="text-gray-600 leading-loose">Holisticly empower leveraged ROI whereas effective
-                    web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly
-                    initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged
-                    ROI whereas effective web-readiness. </p>
-                </div>
-                <div class="my-3 mx-auto w-24 h-24 shadow-md rounded-full">
-                  <img class="rounded-full p-2 w-full" src="assets/img/testimonial/img1.jpg" alt="">
-                </div>
-                <div class="mb-2">
-                  <h2 class="font-bold text-lg uppercase text-blue-600 mb-2">Rob</h2>
-                  <h3 class="font-medium text-white text-sm">OnePageLove</h3>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- Testimonial Section End -->
-
-  <!-- carousel-area Section Start -->
-  <!-- <section class="carousel-area bg-gray-800 py-32">
-    <div class="container">
-      <div class="flex">
-        <div class="w-full relative">
-          <div class="portfolio-carousel">
-            <div>
-              <img class="w-full" src="assets/img/slide/img1.jpg" alt="">
-            </div>
-            <div>
-              <img class="w-full" src="assets/img/slide/img2.jpg" alt="">
-            </div>
-            <div>
-              <img class="w-full" src="assets/img/slide/img3.jpg" alt="">
-            </div>
-            <div>
-              <img class="w-full" src="assets/img/slide/img4.jpg" alt="">
-            </div>
-            <div>
-              <img class="w-full" src="assets/img/slide/img5.jpg" alt="">
-            </div>
-            <div>
-              <img class="w-full" src="assets/img/slide/img6.jpg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- carousel-area Section End -->
-
   <!-- FAQ Section Start-->
   <section id="faq" class="bg-berkeley py-24">
     <div class="container">
@@ -565,12 +551,12 @@
             <div class="border-b">
               <button class="w-full flex justify-between items-center text-left p-2 focus:outline-none"
                 onclick="toggleAccordion('accordion-content-1')">
-                <h2 class="font-semibold text-white py-3 mx-1">Who?</h2>
+                <h2 class="font-semibold text-white py-3 mx-1">Question 1 Here</h2>
                 <img class="w-6 h-6" src="assets/img/etc/caret-down-md-svgrepo-com-white.svg" alt="Caret Down">
               </button>
               <div id="accordion-content-1" class="p-4 hidden">
                 <p class="text-white py-3 mx-1">
-                  I'm Me
+                  This is the content of the second accordion item. You can add any HTML content here.
                 </p>
               </div>
             </div>
@@ -579,7 +565,7 @@
             <div class="border-b">
               <button class="w-full flex justify-between items-center text-left p-2 focus:outline-none"
                 onclick="toggleAccordion('accordion-content-2')">
-                <h2 class="font-semibold text-white py-3 mx-1">What?</h2>
+                <h2 class="font-semibold text-white py-3 mx-1">Question 2 Here</h2>
                 <img class="w-6 h-6" src="assets/img/etc/caret-down-md-svgrepo-com-white.svg" alt="Caret Down">
               </button>
               <div id="accordion-content-2" class="p-4 hidden">
@@ -593,7 +579,7 @@
             <div>
               <button class="w-full flex justify-between items-center text-left p-2 focus:outline-none"
                 onclick="toggleAccordion('accordion-content-3')">
-                <h2 class="font-semibold text-white py-3 mx-1">When?</h2>
+                <h2 class="font-semibold text-white py-3 mx-1">Question 3 Here</h2>
                 <img class="w-6 h-6" src="assets/img/etc/caret-down-md-svgrepo-com-white.svg" alt="Caret Down">
               </button>
               <div id="accordion-content-3" class="p-4 hidden">
@@ -641,7 +627,7 @@
 
   <!-- Map Section Start -->
   <section id="google-map-area">
-    <div class="mx-6 mb-6">
+    <div>
       <div class="flex">
         <div class="w-full">
           <object style="border:0; height: 450px; width: 100%;"
@@ -731,6 +717,23 @@
       content.classList.toggle('hidden');
     }
   </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      document.getElementById('day-one-btn').addEventListener('click', function () {
+        document.getElementById('day-one-event').classList.remove('hidden');
+        document.getElementById('day-two-event').classList.add('hidden');
+      });
+
+      document.getElementById('day-two-btn').addEventListener('click', function () {
+        document.getElementById('day-one-event').classList.add('hidden');
+        document.getElementById('day-two-event').classList.remove('hidden');
+      });
+
+    });
+  </script>
+
+
 </body>
 
 </html>
